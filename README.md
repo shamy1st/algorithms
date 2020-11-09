@@ -17,7 +17,7 @@
 * Jump Search
 * Exponential Search
 
-## String Algorithms
+## String
 * Count Vowels
 * Reverse a String
 * Reverse Words
@@ -29,9 +29,7 @@
 * Anagrams - Using Histogramming
 * Palindrome
 
-## Analysis of Algorithms
-
-## Greedy Algorithms
+## Greedy
 
 ## Dynamic Programming
 
@@ -41,15 +39,15 @@
 
 ## Divide and Conquer
 
-## Geometric Algorithms
+## Geometric
 
-## Mathematical Algorithms
+## Mathematical
 
-## Bit Algorithms
+## Bit
 
-## Graph Algorithms
+## Graph
 
-## Randomized Algorithms
+## Randomized
 
 ## Branch and Bound
 
