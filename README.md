@@ -11,6 +11,23 @@
 * Bucket Sort
 
 ## Searching
+* Linear Search
+* Binary Search (Iterative, Recursive)
+* Ternary Search
+* Jump Search
+* Exponential Search
+
+## String Algorithms
+* Count Vowels
+* Reverse a String
+* Reverse Words
+* Rotations
+* Remove Duplicates
+* Most Repeated Char
+* Sentence Capitalization
+* Anagrams - Using Sorting
+* Anagrams - Using Histogramming
+* Palindrome
 
 ## Analysis of Algorithms
 
@@ -19,8 +36,6 @@
 ## Dynamic Programming
 
 ## Pattern Searching
-
-## String Algorithms
 
 ## Backtracking
 
