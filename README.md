@@ -1,8 +1,18 @@
 # Algorithms
 
-## Analysis of Algorithms
+## Sorting
+* Bubble Sort
+* Selection Sort
+* Insertion Sort
+* Merge Sort
+* Quick Sort
+* Partitioning
+* Counting Sort
+* Bucket Sort
 
-## Searching and Sorting
+## Searching
+
+## Analysis of Algorithms
 
 ## Greedy Algorithms
 
