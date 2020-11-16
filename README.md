@@ -277,17 +277,99 @@ bucket sort    | O(n + k) | O(n^2)
 * Jump Search
 * Exponential Search
 
-## String
-* Count Vowels
-* Reverse a String
-* Reverse Words
-* Rotations
-* Remove Duplicates
-* Most Repeated Char
-* Sentence Capitalization
-* Anagrams - Using Sorting
-* Anagrams - Using Histogramming
-* Palindrome
+## Strings
+
+### Count Vowels
+
+Find the number of vowels in a string. Vowels in English are A, E, O, U and I.
+Input: “hello”
+Output: 2
+
+* **solution**
+
+        public static int countVowels(String str) {
+            if(str == null)
+                return 0;
+            
+            Set<Character> vowels = new HashSet<>();
+            vowels.add('a'); vowels.add('e'); vowels.add('o'); vowels.add('u'); vowels.add('i');
+
+            int count = 0;
+            for(var ch : str.toLowerCase().toCharArray())
+                if(vowels.contains(ch))
+                    count++;
+
+            return count;
+        }
+
+### Reverse String
+
+Input: “hello”
+Output: “olleh”
+
+* **solution**
+
+        public static String reverse(String str) {
+            if(str == null)
+                return "";
+
+            StringBuilder reversed = new StringBuilder();
+            for(int i=str.length()-1;i>=0;i--)
+                reversed.append(str.charAt(i));
+
+            return reversed.toString();
+        }
+
+### Reverse Words
+
+Reverse the order of words in a sentence.
+Input: “Trees are beautiful”
+Output: “beautiful are Trees”
+
+* **solution**
+
+        public static String reverseWords(String str) {
+            if(str == null)
+                return "";
+
+            String[] words = str.trim().split(" ");
+            StringBuilder reversed = new StringBuilder();
+            for(int i=words.length-1;i>=0;i--) {
+                reversed.append(words[i]);
+                if(i != 0)
+                    reversed.append(" ");
+            }
+            return reversed.toString();
+        }
+
+        or
+
+        public static String reverseWords2(String str) {
+            if (str == null)
+                return "";
+
+            String[] words = str.trim().split(" ");
+            Collections.reverse(Arrays.asList(words));
+            return String.join(" ", words);
+        }
+
+        or using stack
+
+### Rotation
+
+Check if a string is a rotation of another string.
+Input: “ABCD”, “DABC” (rotate one char to the right)
+Output: true
+
+* **solution**
+
+        public static boolean areRotations(String str1, String str2) {
+            if(str1 == null || str2 == null || (str1.length() != str2.length()))
+                return false;
+            return (str1 + str1).contains(str2);
+        }
+
+
 
 ## Greedy
 * Activity Selection Problem
