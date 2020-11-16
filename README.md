@@ -368,6 +368,82 @@ Output: true
             return (str1 + str1).contains(str2);
         }
 
+### Remove Duplicates
+
+Remove duplicate characters in a string.
+
+Input: “Hellooo World!!!”
+
+Output: “Helo Wrd!”
+
+        public static String removeDuplicates(String str) {
+            if(str == null)
+                return "";
+            
+            StringBuilder noDuplicates = new StringBuilder();
+            Set<Character> found = new HashSet<>();
+
+            for(var ch : str.toCharArray()) {
+                if (!found.contains(ch)) {
+                    noDuplicates.append(ch);
+                    found.add(ch);
+                }
+            }
+            return noDuplicates.toString();
+        }
+
+### Most Repeated Char
+
+Find the most repeated character in a string.
+
+Input: “Hellooo!!”
+
+Output: ‘o’
+
+        public static char mostRepeatedChar(String str) {
+            if(str == null || str.isEmpty())
+                throw new IllegalStateException();
+
+            Map<Character, Integer> counts = new HashMap<>();
+            for(var ch : str.toCharArray()) {
+                if (!counts.containsKey(ch))
+                    counts.put(ch, 1);
+                else
+                    counts.put(ch, counts.get(ch) + 1);
+            }
+
+            int max = 0;
+            char maxChar = '\0';
+            for(var entry : counts.entrySet()) {
+                if(entry.getValue() > max) {
+                    max = entry.getValue();
+                    maxChar = entry.getKey();
+                }
+            }
+            return maxChar;
+        }
+
+### Sentence Capitalization
+
+Capitalize the first letter of each word in a sentence. Also, remove any extra spaces between words.
+
+Input: “   hello    woRld   to   my     strIngs   ”
+
+Output: “Hello World To My Strings”
+
+        public static String capitalize(String sentence) {
+            if(sentence == null || sentence.trim().isEmpty())
+                return "";
+
+            String[] words = sentence.trim().replaceAll("\\s+", " ").split(" ");
+            for(int i=0;i<words.length;i++)
+                words[i] = words[i].substring(0,1).toUpperCase()
+                            + words[i].substring(1).toLowerCase();
+
+            return String.join(" ", words);
+        }
+
+### 
 
 
 ## Greedy
