@@ -443,7 +443,97 @@ Output: “Hello World To My Strings”
             return String.join(" ", words);
         }
 
-### 
+### Anagrams
+
+Detect if two strings are anagram of each other. A string is an anagram of another string if it has the exact same characters in any order.
+
+Input: “abcd”, “adbc”
+
+Output: true
+
+
+Input: “abcd”, “cadb”
+
+Output: true
+
+
+Input: “abcd”, “abcd”
+
+Output: true
+
+
+Input: “abcd”, “abce”
+
+Output: false
+
+* **using Sorting**
+
+        // O(n log n)
+        public static boolean areAnagrams(String str1, String str2) {
+            if(str1 == null || str2 == null || str1.length() != str2.length())
+                return false;
+
+            // O(n)
+            char[] array1 = str1.toCharArray();
+            // O(n log n)
+            Arrays.sort(array1);
+            // O(n)
+            char[] array2 = str2.toCharArray();
+            // O(n log n)
+            Arrays.sort(array2);
+
+            return Arrays.equals(array1, array2);
+        }
+
+* **using Histogramming**
+
+        // O(n)
+        public static boolean areAnagrams2(String str1, String str2) {
+            if(str1 == null || str2 == null || str1.length() != str2.length())
+                return false;
+
+            Map<Character, Integer> counts = new HashMap<>();
+            // O(n)
+            for(char ch : str1.toCharArray()) {
+                if (!counts.containsKey(ch))
+                    counts.put(ch, 1);
+                else
+                    counts.put(ch, counts.get(ch) + 1);
+            }
+
+            // O(n)
+            for(char ch : str2.toCharArray()) {
+                if (!counts.containsKey(ch))
+                    counts.put(ch, -1);
+                else
+                    counts.put(ch, counts.get(ch) - 1);
+            }
+
+            for(var value : counts.values())
+                if(value != 0)
+                    return false;
+
+            return true;
+        }
+
+### Palindrome
+
+Check if a string is palindrome. If we read a palindrome string from left or right, we get the exact same characters.
+
+Input: “abba”
+
+Output: true
+
+
+Input: “abcba”
+
+Output: true
+
+
+Input: “abca”
+
+Output: false
+
 
 
 ## Greedy
