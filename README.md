@@ -171,6 +171,7 @@ time           | best        | worst
 quick sort     | O(nlog n)   | O(n^2)
 
 * **space because of stack calls**
+
 space          | best        | worst
 ---------------|-------------|----------
 quick sort     | O(log n)    | O(n)
