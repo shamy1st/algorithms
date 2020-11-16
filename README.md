@@ -271,11 +271,26 @@ bucket sort    | O(n + k) | O(n^2)
         }
 
 ## Searching
-* Linear Search
-* Binary Search (Iterative, Recursive)
-* Ternary Search
-* Jump Search
-* Exponential Search
+
+### Linear Search
+
+
+
+### Binary Search (Iterative, Recursive)
+
+
+
+### Ternary Search
+
+
+
+### Jump Search
+
+
+
+### Exponential Search
+
+
 
 ## Strings
 
