@@ -534,7 +534,25 @@ Input: “abca”
 
 Output: false
 
+        public static boolean isPalindrome(String str) {
+            if(str == null || str.isEmpty())
+                return false;
 
+            String reversed = new StringBuilder(str).reverse().toString();
+            return str.equals(reversed);
+        }
+
+        or
+
+        public static boolean isPalindrome2(String str) {
+            if(str == null || str.isEmpty())
+                return false;
+
+            for(int i=0; i<str.length()/2; i++)
+                if(str.charAt(i) != str.charAt(str.length() - i - 1))
+                    return false;
+            return true;
+        }
 
 ## Greedy
 * Activity Selection Problem
