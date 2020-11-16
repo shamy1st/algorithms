@@ -272,11 +272,13 @@ bucket sort    | O(n + k) | O(n^2)
 
 ## Searching
 
-time           | best      | worst
----------------|-----------|-------
-linear search  | O(1)      | O(n)
-binary search  | O(log n)  | O(log n)
-ternary search | O(log3 n) | O(log3 n)
+time               | best      | worst
+-------------------|-----------|-------
+linear search      | O(1)      | O(n)
+binary search      | O(log n)  | O(log n)
+ternary search     | O(log3 n) | O(log3 n)
+jump search        | O(sqrt n) | O(sqrt n)
+exponential search | O(log i)  |
 
 ### Linear Search
 ![](https://github.com/shamy1st/algorithms/blob/main/images/linear-search.png)
@@ -379,12 +381,53 @@ ternary search | O(log3 n)
         }
 
 ### Jump Search
+![](https://github.com/shamy1st/algorithms/blob/main/images/jump-search.png)
+![](https://github.com/shamy1st/algorithms/blob/main/images/jump-search-2.png)
+![](https://github.com/shamy1st/algorithms/blob/main/images/jump-search-complexity.png)
 
+--             | time     
+---------------|----------
+jump search    | O(sqrt n) 
 
+        public int jumpSearch(T[] array, T value) {
+            int blockSize = (int) Math.sqrt(array.length);
+            int start = 0;
+            int next = blockSize;
+
+            while(start < array.length && array[next - 1].compareTo(value) < 0) {
+                start = next;
+                next += blockSize;
+                if(next > array.length)
+                    next = array.length;
+            }
+
+            for(int i=start;i<next;i++)
+                if(value.compareTo(array[i]) == 0)
+                    return i;
+
+            return -1;
+        }
 
 ### Exponential Search
+![](https://github.com/shamy1st/algorithms/blob/main/images/exponential-search.png)
+![](https://github.com/shamy1st/algorithms/blob/main/images/exponential-search-2.png)
+![](https://github.com/shamy1st/algorithms/blob/main/images/exponential-search-3.png)
+![](https://github.com/shamy1st/algorithms/blob/main/images/exponential-search-4.png)
+![](https://github.com/shamy1st/algorithms/blob/main/images/exponential-search-complexity.png)
 
+--                 | time     
+-------------------|----------
+exponential search | O(log i) 
 
+        public int exponentialSearch(T[] array, T value) {
+            int bound = 1;
+            while(bound < array.length && array[bound].compareTo(value) < 0)
+                bound *= 2;
+
+            int start = bound / 2;
+            int end = Math.min(bound, array.length - 1);
+            return binarySearchRecursive(array, value, start, end);
+        }
 
 ## Strings
 
