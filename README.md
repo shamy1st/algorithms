@@ -282,7 +282,9 @@ bucket sort    | O(n + k) | O(n^2)
 ### Count Vowels
 
 Find the number of vowels in a string. Vowels in English are A, E, O, U and I.
+
 Input: “hello”
+
 Output: 2
 
 * **solution**
@@ -305,6 +307,7 @@ Output: 2
 ### Reverse String
 
 Input: “hello”
+
 Output: “olleh”
 
 * **solution**
@@ -323,7 +326,9 @@ Output: “olleh”
 ### Reverse Words
 
 Reverse the order of words in a sentence.
+
 Input: “Trees are beautiful”
+
 Output: “beautiful are Trees”
 
 * **solution**
@@ -358,7 +363,9 @@ Output: “beautiful are Trees”
 ### Rotation
 
 Check if a string is a rotation of another string.
+
 Input: “ABCD”, “DABC” (rotate one char to the right)
+
 Output: true
 
 * **solution**
