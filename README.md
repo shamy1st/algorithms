@@ -287,8 +287,6 @@ Input: “hello”
 
 Output: 2
 
-* **solution**
-
         public static int countVowels(String str) {
             if(str == null)
                 return 0;
@@ -310,8 +308,6 @@ Input: “hello”
 
 Output: “olleh”
 
-* **solution**
-
         public static String reverse(String str) {
             if(str == null)
                 return "";
@@ -330,8 +326,6 @@ Reverse the order of words in a sentence.
 Input: “Trees are beautiful”
 
 Output: “beautiful are Trees”
-
-* **solution**
 
         public static String reverseWords(String str) {
             if(str == null)
@@ -367,8 +361,6 @@ Check if a string is a rotation of another string.
 Input: “ABCD”, “DABC” (rotate one char to the right)
 
 Output: true
-
-* **solution**
 
         public static boolean areRotations(String str1, String str2) {
             if(str1 == null || str2 == null || (str1.length() != str2.length()))
