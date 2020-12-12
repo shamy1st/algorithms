@@ -6,7 +6,7 @@ time           | best        | worst
 ---------------|-------------|-------
 bubble sort    | O(n)        | O(n^2)
 selection sort | O(n^2)      | O(n^2)
-insertiin sort | O(n)        | O(n^2)
+insertion sort | O(n)        | O(n^2)
 merge sort     | O(nlog n)   | O(nlog n)
 quick sort     | O(nlog n)   | O(n^2)
 bucket sort    | O(n + k)    | O(n^2)
