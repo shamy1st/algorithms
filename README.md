@@ -3,20 +3,7 @@
 * [Sorting](https://github.com/shamy1st/algorithms-sorting)
 * [Searching](https://github.com/shamy1st/algorithms-searching)
 * [Strings](https://github.com/shamy1st/algorithms-strings)
-
-## Greedy
-* Activity Selection Problem
-* Kruskal’s Minimum Spanning Tree Algorithm
-* Huffman Coding
-* Efficient Huffman Coding for Sorted Input
-* Prim’s Minimum Spanning Tree Algorithm
-* Prim’s MST for Adjacency List Representation
-* Dijkstra’s Shortest Path Algorithm
-* Dijkstra’s Algorithm for Adjacency List Representation
-* Job Sequencing Problem
-* Greedy Algorithm to find Minimum number of Coins
-* K Centers Problem
-* Minimum Number of Platforms Required for a Railway/Bus Station
+* [Greedy](https://github.com/shamy1st/algorithms-greedy)
 
 ## Dynamic Programming
 * Overlapping Subproblems Property
