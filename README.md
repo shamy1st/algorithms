@@ -6,7 +6,7 @@
 * [Greedy](https://github.com/shamy1st/algorithms-greedy) (0/12)
 * [Dynamic Programming](https://github.com/shamy1st/algorithms-dynamic-programming) (0/56)
 * [Pattern Searching](https://github.com/shamy1st/algorithms-pattern-searching) (0/14)
-* [Backtracking](https://github.com/shamy1st/algorithms-backtracking/) (0/)
+* [Backtracking](https://github.com/shamy1st/algorithms-backtracking/) (0/10)
 * [Divide and Conquer](https://github.com/shamy1st/algorithms-divide-conquer) (0/)
 * [Geometric](https://github.com/shamy1st/algorithms-geometric) (0/)
 * [Mathematical](https://github.com/shamy1st/algorithms-mathematical) (0/)
