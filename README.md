@@ -1,7 +1,7 @@
 # Algorithms
 
 * [Sorting](https://github.com/shamy1st/algorithms-sorting) (7/7)
-* [Searching](https://github.com/shamy1st/algorithms-searching)
+* [Searching](https://github.com/shamy1st/algorithms-searching) (5/5)
 * [Strings](https://github.com/shamy1st/algorithms-strings)
 * [Greedy](https://github.com/shamy1st/algorithms-greedy) (0/)
 * [Dynamic Programming](https://github.com/shamy1st/algorithms-dynamic-programming) (0/)
