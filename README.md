@@ -1,6 +1,6 @@
 # Algorithms
 
-* [Sorting](https://github.com/shamy1st/algorithms-sorting)
+* [Sorting](https://github.com/shamy1st/algorithms-sorting) (7/7)
 * [Searching](https://github.com/shamy1st/algorithms-searching)
 * [Strings](https://github.com/shamy1st/algorithms-strings)
 * [Greedy](https://github.com/shamy1st/algorithms-greedy)
