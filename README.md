@@ -5,9 +5,9 @@
 * [Strings](https://github.com/shamy1st/algorithms-strings)
 * [Greedy](https://github.com/shamy1st/algorithms-greedy)
 * [Dynamic Programming](https://github.com/shamy1st/algorithms-dynamic-programming)
-* [Pattern Searching]()
-* [Backtracking]()
-* [Divide and Conquer]()
+* [Pattern Searching](https://github.com/shamy1st/algorithms-pattern-searching)
+* [Backtracking](https://github.com/shamy1st/algorithms-backtracking/)
+* [Divide and Conquer](https://github.com/shamy1st/algorithms-divide-conquer)
 * [Geometric]()
 * [Mathematical]()
 * [Bit]()
@@ -16,41 +16,6 @@
 * [Branch and Bound]()
 * [Misc]()
 
-## Pattern Searching
-* Naive Pattern Searching
-* KMP Algorithm
-* Rabin-Karp Algorithm
-* A Naive Pattern Searching Question
-* Finite Automata
-* Efficient Construction of Finite Automata
-* Boyer Moore Algorithm – Bad Character Heuristic
-* Suffix Array
-* Anagram Substring Search (Or Search for all permutations)
-* Pattern Searching using a Trie of all Suffixes
-* Aho-Corasick Algorithm for Pattern Searching
-* kasai’s Algorithm for Construction of LCP array from Suffix Array
-* Z algorithm (Linear time pattern searching Algorithm)
-* Program to wish Women’s Day
-
-## Backtracking
-* Print all permutations of a given string
-* The Knight’s tour problem
-* Rat in a Maze
-* N Queen Problem
-* Subset Sum
-* m Coloring Problem
-* Hamiltonian Cycle
-* Sudoku
-* Tug of War
-* Solving Cryptarithmetic Puzzles
-
-## Divide and Conquer
-* Write your own pow(x, n) to calculate x*n
-* Median of two sorted arrays
-* Count Inversions
-* Closest Pair of Points
-* Strassen’s Matrix Multiplication
-* Quick Sort vs Merge Sort 
 
 ## Geometric
 * Closest Pair of Points | O(nlogn) Implementation
